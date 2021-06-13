@@ -8,9 +8,32 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "Ability",
+"language": "GDScript",
+"path": "res://ability.gd"
+}, {
+"base": "Reference",
+"class": "Damage",
+"language": "GDScript",
+"path": "res://damage.gd"
+}, {
+"base": "Reference",
+"class": "DamageType",
+"language": "GDScript",
+"path": "res://damage_types.gd"
+} ]
+_global_script_class_icons={
+"Ability": "",
+"Damage": "",
+"DamageType": ""
+}
+
 [application]
 
 config/name="SummerProject"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
 [physics]
