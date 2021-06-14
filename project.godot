@@ -12,17 +12,17 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "Ability",
 "language": "GDScript",
-"path": "res://ability.gd"
+"path": "res://Scripts/ability.gd"
 }, {
-"base": "Reference",
+"base": "Node2D",
 "class": "Damage",
 "language": "GDScript",
-"path": "res://damage.gd"
+"path": "res://Scripts/damage.gd"
 }, {
 "base": "Reference",
 "class": "DamageType",
 "language": "GDScript",
-"path": "res://damage_types.gd"
+"path": "res://Scripts/damage_types.gd"
 } ]
 _global_script_class_icons={
 "Ability": "",
@@ -33,7 +33,7 @@ _global_script_class_icons={
 [application]
 
 config/name="SummerProject"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://Scenes/Main.tscn"
 config/icon="res://icon.png"
 
 [physics]
