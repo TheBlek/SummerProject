@@ -9,7 +9,7 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Node2D",
+"base": "Resource",
 "class": "Ability",
 "language": "GDScript",
 "path": "res://Scripts/ability.gd"
@@ -19,7 +19,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Scripts/caster.gd"
 }, {
-"base": "Node2D",
+"base": "Resource",
 "class": "Damage",
 "language": "GDScript",
 "path": "res://Scripts/damage.gd"

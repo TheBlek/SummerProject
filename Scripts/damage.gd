@@ -1,6 +1,5 @@
 class_name Damage
-extends Node2D
+extends Resource
 
-export var amount : float
+export(float) var amount
 export(DamageType.DamageTypes) var type
-

@@ -1,6 +1,6 @@
 extends Node2D
 
-var max_hp = 100
+var max_hp = 100.0
 var _hp = max_hp
 onready var _resistances : Array
 
@@ -16,11 +16,11 @@ func take_damage(damage : Damage):
 	_change_hp(-amount)
 
 
-func heal(amount):
+func heal(amount : float):
 	_change_hp(amount)
 
 
-func _change_hp(amount):
+func _change_hp(amount : float):
 	var last_hp = _hp
 	_hp += amount
 	_hp = max(_hp, 0)

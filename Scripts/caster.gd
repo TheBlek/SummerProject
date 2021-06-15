@@ -4,7 +4,7 @@ extends Node2D
 signal ability_casted
 
 var enemy
-export var abilities : Array
+export(Array, Resource) var abilities
 export var max_mana : int
 onready var _mana = max_mana
 
@@ -26,7 +26,7 @@ func cast(ability_index : int):
 		print("Not Sufficient Mana or Ability Is Still In Cooldown")
 
 
-func restore_mana(amount):
+func restore_mana(amount : float):
 	_mana = min(max_mana, _mana + amount)
 
 
@@ -35,16 +35,13 @@ func next_turn():
 		ability.next_turn()
 
 
-func set_enemy(e):
-	enemy = e
-	if enemy is NodePath:
-		enemy = get_node(enemy)
+func set_enemy(e : NodePath):
+	enemy = get_node(enemy)
 
 
 func _parse_abilities():
 	for i in range(abilities.size()):
-		abilities[i] = get_node(abilities[i])
-		if not abilities[i]:
+		if not abilities[i] is Ability:
 			print("Path to ability was set incorrectly index: ", i, " I'm ", name)
 
 
