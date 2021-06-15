@@ -15,6 +15,11 @@ _global_script_classes=[ {
 "path": "res://Scripts/ability.gd"
 }, {
 "base": "Node2D",
+"class": "Caster",
+"language": "GDScript",
+"path": "res://Scripts/caster.gd"
+}, {
+"base": "Node2D",
 "class": "Damage",
 "language": "GDScript",
 "path": "res://Scripts/damage.gd"
@@ -26,6 +31,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Ability": "",
+"Caster": "",
 "Damage": "",
 "DamageType": ""
 }

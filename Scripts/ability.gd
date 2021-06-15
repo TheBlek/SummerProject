@@ -10,6 +10,7 @@ enum Abilities{
 	LightningT1,
 	PhysicalT1,
 	ChaosT1,
+	Attack,
 }
 
 export(Abilities) var id
@@ -55,4 +56,4 @@ func _parse_damages():
 	for i in range(damages.size()):
 		damages[i] = get_node(damages[i])
 		if not damages[i]:
-			print("Path to ability was set incorrectly index: ", i)
+			print("Path to damage node was set incorrectly index: ", i, " in ability: ", name)
